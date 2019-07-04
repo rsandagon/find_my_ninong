@@ -1,4 +1,5 @@
-body {
+body, html  {
+    height: 100%;
     margin: 0;
     padding: 0;
     width: 100vw;
@@ -7,9 +8,24 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: #2d248a;
+    background-color: #72afdc;
     color: #fff;
     font-family: 'Lobster', cursive;
+  }
+
+  
+  .bg {
+    /* The image used */
+    background-image: url("unggoy2.jpg");
+    /* Full height */
+    height: 80%; 
+    width: 40vw;
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
   }
 
   canvas {
@@ -29,7 +45,7 @@ body {
 
   .inputfile:focus+label,
   .inputfile+label:hover {
-    color: #e42c64;
+    color: #610f13;
   }
 
   .inputfile+label * {
@@ -37,7 +53,7 @@ body {
   }
 
   .inputfile:focus+label {
-    outline: 1px dotted #e42c64;
+    outline: 1px dotted #610f13;
     outline: -webkit-focus-ring-color auto 5px;
   }
 
@@ -48,6 +64,7 @@ body {
     height: 64px;
     transform: rotate(45deg);
     transform-origin: 32px 32px;
+    z-index: 998;
   }
 
   .lds-heart div {
@@ -109,4 +126,5 @@ body {
   .upload-container{
     display: none;
     font-size: 2em;
+    z-index: 999;
   }
